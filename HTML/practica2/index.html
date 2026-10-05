@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Login</h1>
+    <form>
+        <label for="txtName">Usuario:</label>
+        <input type="password" id="txtName" name="txtName" required> <!--id = identificador-->
+        <br>
+        <label for="txtPassword">Contraseña:</label>
+        <input type="password" id="txtPassword" name="txtPassword" required>
+        <br>
+        <button type="button" style="background-color: rgb(0, 200, 255); color: white;" id="btnLogin" onclick="login()">Iniciar sesión</button>
+    </form>
+    <div id="mensaje"></div>
+    <script src="./js/script.js"></script>
+</body>
+</html>
