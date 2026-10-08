@@ -1,26 +1,33 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
-    <link href="./bootstrap/css/bootstrap.min.css" rel="stylesheet">
-    <link href="./icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
-<body>
-    <h1>Login</h1>
-    <form>
-  <div class="mb-3 row">
-    <label for="txtUsuario" class="form-label" style="color: #df5320;">Usuario<br></label>
-    <input type="text" class="form-control" id="txtUsuario">
-    <span class="input-group-text" id="basic-addon1"><i class="bi bi-person-fill"></i></span>
+<body class="bg-light d-flex align-items-center" style="min-height: 100vh;"><!--alinear al centro-->
+  <div class="container-fluid d-flex justify-content-center"><!--centrado-->
+    <div class="card shadow p-4"><!--sombreado-->
+        <h2 class="text-center mb-4">Iniciar Sesión</h2><!--Encabezado-->
+        <form>
+  <div class="mb-3"><!--campo de usuario-->
+    <label for="txtUsuario" class="form-label">Usuario</label>
+    <input type="text" class="form-control" id="txtUsuario" aria-describedby="txtUsuarioHelp">
+    <div id="txtUsuarioHelp" class="form-text"></div>
   </div>
-  <div class="mb-3">
-    <label for="txtPassword" class="form-label" style="color: #df5320;">Password<br></label>
-    <input type="password" class="form-control" id="txtPassword">
+  <div class="mb-3"><!--campo de contraseña-->
+    <label for="exampleInputPassword1" class="form-label">Contraseña</label>
+    <input type="password" class="form-control" id="exampleInputPassword1">
   </div>
+  <div class="mb-3 form-check"><!--checkbox-->
+    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+    <label class="form-check-label" for="exampleCheck1">Recordarme</label>
+  </div>
+  <button type="submit" class="btn btn-primary">Entrar</button><!--botón de entrada-->
   <br>
-  <button type="submit" class="btn btn-primary" style="background-color: #2086df;">Entrar</button>
+  <br>
+  <p>¿No tienes una cuenta? <a href="registro.html">Regístrate</a></p>
 </form>
 <div id="mensaje"></div>
 <script src="./js/script.js"></script>  
