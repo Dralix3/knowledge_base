@@ -3,20 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Registro</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">  
 </head>
-<body>
-    <h1>Login</h1>
-    <form>
-        <label for="txtName">Usuario:</label>
-        <input type="password" id="txtName" name="txtName" required> <!--id = identificador-->
-        <br>
-        <label for="txtPassword">Contraseña:</label>
-        <input type="password" id="txtPassword" name="txtPassword" required>
-        <br>
-        <button type="button" style="background-color: rgb(0, 200, 255); color: white;" id="btnLogin" onclick="login()">Iniciar sesión</button>
-    </form>
-    <div id="mensaje"></div>
-    <script src="./js/script.js"></script>
+<body class="bg-light d-flex align-items-center" style="min-height: 100vh;">
+    <div class="container-fluid d-flex justify-content-center"><!--centrado-->
+    <div class="card shadow p-4" style="width: 100%; max-width: 500px;">
+        <h2 class="text-center mb-4">Registro</h2>
+        <form>
+    <div class="mb-3">
+        <label for="txtNombre" class="form-label">Nombre</label>
+        <input type="text" class="form-control" id="txtNombre">
+    </div>
+    <div class="mb-3">
+        <label for="txtEmail" class="form-label">Email</label>
+        <input type="email" class="form-control" id="txtEmail">
+    </div>
+    <div class="mb-3">
+        <label for="txtConfirmEmail" class="form-label">Confirmar Email</label>
+        <input type="email" class="form-control" id="txtConfirmEmail">
+    </div>
+    <div class="mb-3">
+        <label for="txtPassword" class="form-label">Contraseña</label>
+        <input type="password" class="form-control" id="txtPassword">
+    </div>
+    <div class="mb-3">
+        <label for="txtConfirmPassword" class="form-label">Confirmar Contraseña</label>
+        <input type="password" class="form-control" id="txtConfirmPassword">
+    </div>
+        </form>
+    </div>
+    <table class="table table-striped table-hover mt-4" style="width: 100%; max-width: 500px;">
+    </table>
 </body>
 </html>
