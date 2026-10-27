@@ -6,17 +6,18 @@
     <title>Abarrotera</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
-<body>
+<body class="container">
     <h1 class="text-center mb-4">Abarrotera</h1>
-    <nav>
-    <div class="row text-center mb-4">
-     <div class="col-3">
-        <div class="list-group" id="list-tab" role="tablist">
-            <a class="list-group-item list-group-item-action active" id="list-indice-list" data-bs-toggle="tab" href="abarrotes.html" role="tab" aria-controls="list-indice">Indice</a><a href="abarrotes.html"></a>
-            <a class="list-group-item list-group-item-action active" id="list-indice-list" data-bs-toggle="tab" href="clientes.html" role="tab" aria-controls="list-cliente">Cliente</a><a href="clientes.html"></a>
-            <a class="list-group-item list-group-item-action active" id="list-indice-list" data-bs-toggle="tab" href="#list-inventario" role="tab" aria-controls="list-inventario">Inventario</a>
-        </div>
-    </div> 
+    <nav class="navbar navbar-expand bg-1">
+        <div class="container-fluid">
+            <div class="nav-overflow" data-bs-toggle="nav-overflow">
+                <ul class="nav navbar-nav">
+                    <li class="nav-item"><a class="nav-link active" aria-current="page" href="abarrotes.html">Indice</a></li>
+                    <li class="nav-item"><a class="nav-link active" aria-current="page" href="clientes.html">Clientes</a></li>
+                    <li class="nav-item"><a class="nav-link active" aria-current="page" href="#">Inventario</a></li>
+                </ul>
+            </div>    
+        </div>    
     </nav>
     <br>
     <div class="container">
